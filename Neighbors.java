@@ -52,7 +52,7 @@ public class Neighbors {
             //System.out.println(dislikeList.get(i));
 
         }
-        System.out.println("dislikeMap :" + dislikeMap);
+//        System.out.println("dislikeMap :" + dislikeMap);
 
         Map<Integer, List<Integer>> likeMap = new HashMap<>();
 
@@ -62,20 +62,20 @@ public class Neighbors {
 
                 for (int j = 1; j <= invitedList; j++) {
                     List<Integer> jDislike = dislikeMap.get(j);
-                    System.out.println("temp :" + jDislike);
-                    System.out.println("i :" + i + " j :" + j);
-                    System.out.println("iDislike :" + iDislike);
-                    System.out.println("jDislike :" + jDislike);
+//                    System.out.println("temp :" + jDislike);
+//                    System.out.println("i :" + i + " j :" + j);
+//                    System.out.println("iDislike :" + iDislike);
+//                    System.out.println("jDislike :" + jDislike);
                     //проверяем, есть ли j в списке тех с кем не хочет сидеть i (например 1=[2, 3])
                     if (i == j || (iDislike != null && iDislike.indexOf(j) != -1)) {
-                        System.out.println("!!!!!!!!");
+//                        System.out.println("!!!!!!!!");
                         //continue;
                     } else {
                         if (dislikeMap.containsKey(j)) { //есть ли в списке dislikeMap предпостения для гостя j (например 4=[1])
-                            System.out.println("?????");
+//                            System.out.println("?????");
                             //if (!dislikeMap.get(i).contains(j)) { //проверяем, есть ли i в списке тех с кем не хочет сидеть j (например 4=[1])
                                 if (jDislike != null && jDislike.indexOf(i) != -1) {
-                                    System.out.println("@@@@@@");
+//                                    System.out.println("@@@@@@");
                                     //continue;
                                 } else {
                                     likeList.add(j);
@@ -88,7 +88,7 @@ public class Neighbors {
                 }
 
                 likeMap.put(i, likeList);
-                System.out.println("likeMap :" + likeMap);
+//                System.out.println("likeMap :" + likeMap);
 
         }
 

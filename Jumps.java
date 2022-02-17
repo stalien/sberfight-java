@@ -44,7 +44,7 @@ public class Jumps {
         boolean maybee = false;
 
         int i = 0, jumpsCount = 0, shuffles = 0;
-        boolean stop = true;
+//        boolean stop = true;
 
         while (shuffles < 100) {
             System.out.println(fences);
