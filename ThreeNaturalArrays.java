@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TreeNaturalArrays {
+public class ThreeNaturalArrays {
     /**
      * Дано три массива, состоящие из натуральных чисел.
      * Напишите функцию, которая возвращает сумму элементов, которые встречаются во всех трех массивах.

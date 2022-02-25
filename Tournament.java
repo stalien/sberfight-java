@@ -71,7 +71,8 @@ public class Tournament {
         enemiesList.add(1);
         enemiesList.add(2);
         enemiesList.add(3);
-        List<Integer> tmp = new ArrayList<>();
+//        List<Integer> tmp = new ArrayList<>();
+        List<Integer> tmp = new ArrayList<>(Arrays.asList(0, 1, 2, 3));
         tmp.addAll(enemiesList);
         enemiesStack.push(tmp);
 
