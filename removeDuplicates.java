@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class RemoveDuplicates {
+public class removeDuplicates {
     /**
      * Дана строка s. Необходимо удалить из нее все символы, которые повторяются ровно k раз подряд.
      * Удаление дубликатов состоит из выбора k соседних одинаковых букв в строке s и удаления их.

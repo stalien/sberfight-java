@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class WordsOrder {
+public class wordsOrder {
     /**
      * "Ukfpf qjzncz, f herb ltkfmn"
      */

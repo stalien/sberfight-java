@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CharCounts {
+public class stringToNum {
     /**
      * Напишите функцию, которая на основе полученной строки генерирует число следующим образом:
      *

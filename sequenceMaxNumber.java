@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SequenceX {
+public class sequenceMaxNumber {
     /**
      * Последовательность X для заданного  натурального числа n образуется следующим образом:
      *

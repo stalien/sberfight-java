@@ -3,9 +3,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class WordsConcatWithComma {
+public class humanReadable {
     /**
-     * 6/8
+     * 8/8
      *
      * Напишите функцию, которая принимает на вход массив строк и возвращает строку, отформатированную согласно следующим правилам:
      *
@@ -70,19 +70,21 @@ public class WordsConcatWithComma {
     public static String humanReadable(List<String> words) {
         // Write your code here...
         String result = "";
+        List<String> tmp = new ArrayList<>();
+        tmp.addAll(words);
 
-        words.removeAll(Collections.singleton(""));
-        if (words.size() == 1) {
-            System.out.println(words.get(0));
-            return words.get(0);
+        tmp.removeAll(Collections.singleton(""));
+        if (tmp.size() == 1) {
+            System.out.println(tmp.get(0));
+            return tmp.get(0);
         }
 
-        for (int i = 0; i < words.size(); i++) {
-            if (i < words.size() - 2) {
-                result = result.concat(words.get(i) + ", ");
+        for (int i = 0; i < tmp.size(); i++) {
+            if (i < tmp.size() - 2) {
+                result = result.concat(tmp.get(i) + ", ");
             }
-            if (i == words.size() - 1){
-                result = result.concat(words.get(i - 1) + " и " + words.get(i));
+            if (i == tmp.size() - 1){
+                result = result.concat(tmp.get(i - 1) + " и " + tmp.get(i));
             }
         }
 
@@ -95,7 +97,7 @@ public class WordsConcatWithComma {
     }
 
     public static void main(String[] args) throws Exception {
-        List<String> words = new ArrayList<>(Arrays.asList("Python", "JavaScript", "Java"));
+        List<String> words = new ArrayList<>(Arrays.asList("Java", "", "JavaScript", "Python"));
 
 
         humanReadable(words);

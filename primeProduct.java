@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Simple {
+public class primeProduct {
     /**
      * Некоторые числа можно представить как сумму простых чисел.
      * Например:

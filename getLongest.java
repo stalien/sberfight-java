@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MaxSubstring {
+public class getLongest {
     /**
      * Напишите функцию, которая для заданной строки возвращает длину наибольшей подстроки без повторяющихся символов.
      *

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class WordsPattern {
+public class findWords {
     /**
      * Дан массив слов words и паттерн строки pattern. Необходимо определить, какие слова из массива words соответствуют паттерну.
      *

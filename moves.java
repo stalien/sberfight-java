@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class ArrayNumsMoves {
+public class moves {
     /**
      * Дан массив чисел nums. За один ход можно выбрать любой элемент и уменьшить его на 1.
      *
