@@ -28,16 +28,39 @@ public class encode {
     public static String encode(String text) {
         // Write your code here...
         String result = "";
+        // Делаем List строк из входной строки
         List<String> list = new ArrayList<>(Arrays.asList(text.split(" ")));
+        System.out.println(list);
 
-        for (int i = 0; i < list.size() - 1; i++) {
-            result = result + list.get(i).substring(1) + list.get(i).substring(0, 1) + "my ";
+        // Проходим циклом по List от превого элемента до последнего
+        for (String word : list) {
+            // если в конце слова - запятая
+            if (word.endsWith(",")) {
+                //обрезать последний символ
+                word = word.substring(0, word.length()-1);
+                //трансформируем слово согласно заданному правилу
+                word = word.substring(1) + word.substring(0, 1) + "my";
+                //добавить запятую и пробел в конце
+                result = result + word.concat(", ");
+                continue;
+            }
+
+            // если в конце слова - точка
+            if (word.endsWith(".")) {
+                //обрезать последний символ
+                word = word.substring(0, word.length()-1);
+                //трансформируем слово согласно заданному правилу
+                word = word.substring(1) + word.substring(0, 1) + "my";
+                //добавить точку в конце
+                result = result + word.concat(".");
+                continue;
+            }
+
+            result = result + word.substring(1) + word.substring(0, 1) + "my ";
         }
-            result = result + list.get(list.size() - 1).substring(1, list.get(list.size() - 1).length() - 1)
-                    + list.get(list.size() - 1).substring(0, 1) + "my"
-                    + list.get(list.size() - 1).substring(list.get(list.size() - 1).length() - 1);
 
         System.out.println(result);
+        System.out.print("heretmy simy hetmy ousehmy herewmy ymmy amilyfmy iveslmy.");
 
         return result;
     }
@@ -49,7 +72,7 @@ public class encode {
     public static void main(String[] args) throws Exception {
 
 
-        encode("there is the house where my family lives.");
+        encode("there is the house, where my family lives.");
     }
 
 }

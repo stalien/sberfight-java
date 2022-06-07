@@ -30,6 +30,7 @@ public class primeProduct {
             tmp = n - simple.get(i);
             System.out.println(tmp);
             if (tmp < 0) break;
+
             if (simple.contains(tmp)) {
                 System.out.println("!!!!");
                 if (maxResult < tmp * simple.get(i)) {
@@ -51,7 +52,7 @@ public class primeProduct {
     public static void main(String[] args) throws Exception {
 
 
-        primeProduct(20);
+        primeProduct(10);
     }
 
 }

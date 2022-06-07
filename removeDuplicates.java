@@ -31,7 +31,43 @@ public class removeDuplicates {
      * 2 шаг: удаляем "bbb", получаем строку "dddaa"
      * 3 шаг: удаляем "ddd", получаем строку "aa"
      *
+     *Аргументы
      *
+     * // 1: s: String
+     * "abcd"
+     *
+     * // 2: k: Integer
+     * 2
+     *
+     * Ожидаемое значение
+     *
+     * "abcd"
+     *
+     * Фактическое значение
+     *
+     * ""
+     *
+     * Тест-кейс #2Провален
+     * 0.123 сек.
+     * Аргументы
+     *
+     * // 1: s: String
+     * "deeedbbcccbdaa"
+     *
+     * // 2: k: Integer
+     * 3
+     *
+     * Ожидаемое значение
+     *
+     * "aa"
+     *
+     * Фактическое значение
+     *
+     * "deeedbbcccbdaa"
+     *
+     * Консольный вывод
+     *
+     * deeedbbcccbdaa
      *
      *
      */
@@ -69,6 +105,9 @@ public class removeDuplicates {
         }
 
         System.out.println(strList);
+        result = String.join("", strList);
+        System.out.println(result);
+
         return result;
     }
 
@@ -79,7 +118,7 @@ public class removeDuplicates {
     public static void main(String[] args) throws Exception {
 
 
-        removeDuplicates("deeedbbcccbdaa", 2);
+        removeDuplicates("deeedbbcccbdaa", 3);
     }
 
 }
